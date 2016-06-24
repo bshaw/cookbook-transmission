@@ -1,0 +1,10 @@
+default['transmission']['docker_image'] = 'timhaak/transmission'
+default['transmission']['image_tag'] = 'latest'
+default['transmission']['host_port'] = 9091
+default['transmission']['container_port'] = 9091
+default['transmission']['host_name'] = 'transmission'
+default['transmission']['domain_name'] = 'example.com'
+default['transmission']['config_volume'] = '/transmission/config'
+default['transmission']['downloads_volume'] = '/transmission/downloads'
+default['transmission']['incomplete_volume'] = '/transmission/incomplete'
+default['transmission']['watch_volume'] = '/transmission/watch'
