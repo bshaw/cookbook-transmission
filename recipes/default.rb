@@ -14,7 +14,7 @@ docker_container 'transmission' do
   restart_policy 'always'
   host_name node['transmission']['host_name']
   domain_name node['transmission']['domain_name']
-  volumes ["#{node['transmission']['config_volume']}:/config", "#{node['transmission']['downloads_volume']}:/downloads", "#{node['transmission']['incomplete_volume']}:/incomplete", "#node{['transmission']['watch_volume']}:/watch"]
+  volumes ["#{node['transmission']['config_volume']}:/config", "#{node['transmission']['downloads_volume']}:/downloads", "#{node['transmission']['incomplete_volume']}:/incomplete", "#{node['transmission']['watch_volume']}:/watch"]
 end
 
 # open port in firewall
